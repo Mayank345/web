@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #4CAF50;
+  }
+  li {
+  float: left;
+  }
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+  background-color: skyblue;
+  }
+
+  .active {
+  background-color: #4CAF50;
+  }
+
+  <!-- categories list -->
+
+  li.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li.dropdown:hover .dropbtn {
+  background-color: red;
+  }
+
+  li.dropdown {
+  display: inline-block;
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+
+  z-index: 1;
+  }
+
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: white;}
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+
+
+  </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Location">Location</a></li>
+        <li><input class="search" type="text" placeholder="Aapko Kya Chahiye? " name="search" autocomplete="off">
+            <button class="search" type="button">
+            <span>Search</span>
+            </button>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn"><span style="font-size:18px">categories</span></a>
+          <div class="dropdown-content">
+            <a href="#dal">Dal</a>
+            <a href="#Pulses">Pulses</a>
+            <a href="#d">Dry Fruits</a>
+            <a href="#c">Cooking Oil</a>
+            <a href="#f">Flours & Grains</a>
+            <a href="#r">Rice</a>
+            <a href="#m">Masala & Spices</a>
+          </div>
+        </li>
+        <li style="float:right"><a class="" href="#cart">My cart</a></li>
+        <li style="float:right"> <a class="" href="C:\Users\HP\Desktop\web Tech\Code\login-form\index.html">Sign-in | Register</a><li>
+      </ul>
+    </div>
+    <div class="images">
+
+      <img src="C:\Users\HP\Desktop\grocery.png" alt="grocery-image" width="1500" height="700">
+
+
+    </div>
+
+    <div class="footer">
+
+
+    </div>
+  </body>
+</html>
